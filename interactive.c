@@ -1,6 +1,7 @@
 // dump1090, a Mode S messages decoder for RTLSDR devices.
 //
 // Copyright (C) 2012 by Salvatore Sanfilippo <antirez@gmail.com>
+// Copyright (c) 2023 jsdx761
 //
 // All rights reserved.
 //
@@ -29,7 +30,14 @@
 //
 
 #include "dump1090.h"
+
 //
+//=========================================================================
+//
+// Declare DF structure
+//
+struct stDF tDF;
+
 // ============================= Utility functions ==========================
 //
 static uint64_t mstime(void) {
